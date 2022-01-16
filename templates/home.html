@@ -1,0 +1,244 @@
+{% extends "layout.html" %}
+
+{% block title %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/mio.css')}}" media="screen">
+ <link rel="stylesheet" href="../static/css/footer.css">
+<title>Proyecto de Simulación</title>
+{% endblock %}
+
+{% block content %}
+<section><br>
+<center>
+<h3> ¿Qué es la Simulación y Modelamiento?</h3>
+El modelamiento y la simulación consisten en el trabajo con el computador y, más 
+<br>específicamente, en el trabajo con o el desarrollo de software para justamente, 
+<br>modelar y simular.
+</center>
+<br>
+<h3> ¿Qué son las técnicas de Simulación?</h3>
+<center><span> 
+    Es una técnica que permite recrear situaciones o establecer la factibilidad de un experimento. 
+<br>A partir de la simulación, se logra visualizar a un sistema físico,haciendo una conexión entre 
+<br>lo abstracto y la realidad. Las simulaciones generan un ambiente de aprendizaje interactivo, 
+<br>lo que permite a los estudiantes explorar la dinámica de un proceso.
+<br><br>
+<h3>Aplicaciones didácticas: </h3>
+-  Para demostrar e ilustrar principios científicos de manera fácil y rápida.
+<br>- Como herramienta de aprendizaje colaborativo para obtener las bases 
+<br> conceptuales necesarias (instrucción directa) o reforzar lo aprendido en clase.
+<br>- Como herramienta de apoyo a la exposición del profesor.
+<br>- Como herramienta de reaprendizaje.
+<br>- Como sustituto para actividades de laboratorio.
+</span></center>
+
+  <div class="producto-img centrar">
+        <img src="/static/./image/teztec.png" alt="">
+    </div>
+<br>
+<br>
+    <h3>Desarrollo de un sistema, modelo de la vida real sobre Datos de la Capacidad
+    <br>Sanitaria (disponibilidad y utilización) durante esta pandemia del COVID-19 en Ecuador</h3>
+</section><br>
+
+<center>
+<span>
+    La crisis del coronavirus es mayúscula. Configura, sin duda alguna, la mayor prueba para la sociedad humana
+    <br>globalizada.Y para Ecuador, un pequeño país colgado de la cordillera de los Andes, el reto resulta descomunal. 
+    <br>La pandemia desnuda situaciones lacerantes de todo tipo. El drama humano que se vive tiene,
+    <br>por lo pronto, su punto de expresión máxima en Guayaquil.
+</span>
+<br>
+<br>
+<span>
+    Desde que la Organización Mundial de Salud declaró pandemia el actual brote la enfermedad por coronavirus Covid-19
+    <br>el 11 de marzo de 2020, los países han declarado el estado de excepción para evitar la transmisión de esta 
+    <br>enfermedad. Según el estudio de la CEPAL (2020), el Covid-19 traerá efectos económicos y sociales graves 
+    <br>en el corto y largo plazo, cuya intensidad y profundidad dependerá de las condiciones de cada economía, el 
+    <br>comercio mundial,la duración de la epidemia y las medidas sociales y económicas para prevenir el contagio. 
+</span>
+<br>
+<br>
+<span>
+    En este capítulo se presentará la descripción general del sistema “Capacidad Sanitaria(disponibilidad y utilización) durante 
+    <br>la pandemia del COVID-19 en Ecuador”.Se analizó un total de 3255 camas hospitalarias y de UCI para COVID-19 en provincias
+    <br>como Pichincha, Guayas, Azuay, Manabí, Imbabura, y El Oro entre el 7 de abril y el 12de diciembre de 2020,obtenidos a partir
+    <br>de Datos sin procesar extraído, limpiado, y normalizado de los informes de la situación nacional frente a la Emergencia
+    <br>Sanitaria SARS-CoV2 (COVID-19) de SNGRE, MSP, Registro Civil, e INEC. publicados en tiempo real en el sitio de Github de los
+    <br>usuarios: Andrés N. Robalino; Carlos Oporto;Francisco Hurtado, y Serge Bibauw. A partir de la información sobre dotación de
+    <br>camas críticas publicadas por el Ministerio de Salud, se estimó el número actual de camas críticas totales disponibles a nivel
+    <br>nacional con un porcentaje del 40 % y 86 %, respectivamente. Dado que un porcentaje de la dotación de camas hospitalarias se
+    <br>encuentra ocupado por pacientes con otras dolencias en un momento dado, se aplica como factor de corrección el índice
+    <br>ocupacional o número de camas ocupadas dividido por el número total de camas disponibles a un tiempo dado. 
+</span>
+<br>
+<br>
+<span>
+    De acuerdo con los datos observados, de forma particular en las provincias las cifran varían de la siguiente manera:
+</span>
+</center>
+<br>
+<center>
+    <span><b>Pichincha</b> 60,8% y 95,7%</span><br>
+    <span><b>Guayas</b> 55% y 95,6%</span><br>
+    <span><b>Azuay</b> 23,6% y 93,3%</span><br>
+    <span><b>Manabí</b> 31,5% y 83,7%</span><br>
+    <span><b>Imbabura</b> 61,3% y 100%</span><br>
+    <span><b>El Oro</b> 57,38% y 100%</span><br>
+<br>
+<span>
+    El modelo de simulación empleado para esta investigación se definió a través de las variables de interés, disponibilidad_hospitalizacion,
+    <br>disponibilidad_uci, disponibilidad_hospitalizacion_covid, disponibilidad_uci_adulto_covid, donde a través de la estadística se estimó el 
+    <br>número actual de camas críticas totales disponibles a nivel nacional, provincial y cantonal.
+</span>
+<br>
+<br>
+<span>
+    A continuación, se detalla de manera global el sistema y su estructura, previo al análisis de los datos: 
+</span>
+<br>
+    <span><b>Población Ecuatoriana</b></span><br>
+    <span><b>Ministerio de Salud</b></span><br>
+    <span><b>Gobierno del Ecuador</b></span><br>
+    <span><b>Hospitales Públicos y Privados</b></span>
+    <br>
+    <br>
+    <div class="producto-img centrar">
+        <img src="/static/./image/poblacion.png" alt="">
+    </div>
+<br>
+<br>
+<h5>Análisis de disminución e incremento de la disponibilidad de hospitalización y UCI de pacientes con o
+sin covid-19.</h5><br>
+
+<h6>Disponibilidad de Hospitalización de paciente en la UCI</h6>
+<center><img src="/static/./image/grafica1.jpg" alt=""></center><br>
+<h6>Disponibilidad de Hospitalización de paciente Adultos en la UCI</h6>
+<center><img src="/static/./image/grafica-2.jpg" alt=""></center><br>
+<h6>Disponibilidad de hospitalización de pacientes sin COVID-19 y sin COVID-19</h6>
+<center><img src="/static/./image/grafica3.jpg" alt=""></center><br>
+<h6>Gráfico de disponibilidad de UCI de pacientes sin COVID-19 y sin COVID-19</h6>
+<center><img src="/static/./image/grafica4.jpg" alt=""></center><br>
+<br>
+
+<h2>Módulos vistos en clase </h2>
+<br>
+<main class="main">
+        <section class="section grid">
+            <article class="section__article">
+                <a href="{{url_for('mediamm')}}">
+                    <h2>Módulo de <br>estadística</h2>
+                    <p class="parrafo">
+                        La estadística es la ciencia encargada de recolectar, analizar,
+                        presentar e interpretar datos. A continuación puedes calcular la media,
+                        mediana y moda mediante datos extraídos de un archivo de Excel.
+                    </p>
+                </a>
+            </article>
+            <article class="section__article">
+                <a href="{{url_for('cuadradosMedios')}}">
+                    <h2>Método de los <br>cuadrados medios</h2>
+                    <p class="parrafo">
+                        Este procedimiento genera números pseudoaleatorios de cuatro dígitos
+                        en donde se debe escoger un número como semilla y el número de 
+                        interacciones que se desea que genere un número pseudoaleatorio.
+                    </p>
+                </a>
+            </article>
+            <article class="section__article">
+                <a href="{{url_for('congruencialLineal')}}">
+                    <h2>Método congruencial<br> lineal</h2>
+                    <p class="parrafo">
+                        Este algoritmo se usa para obtener una secuencia de números pseudoaleatorios
+                        calculados a partir de una función lineal en la que se requiere la utilización
+                        de cinco variables.
+                    </p>
+                </a>
+            </article>
+            <article class="section__article">
+                <a href="{{url_for('congruencialMultiplicativo')}}">
+                    <h2>Método congruencial<br> multiplicativo</h2>
+                    <p class="parrafo">
+                        Este algoritmo genera números pseudoaleatorios y tiene como base el uso del
+                        algoritmo congruencial lineal, con la única diferencia que conlleva una operación menos.
+                    </p>
+                </a>
+            </article>
+
+            <article class="section__article">
+                <a href="{{url_for('regresionLineal')}}">
+                    <h2>Regresión<br> lineal</h2>
+                    <p class="parrafo">
+                        Esta función permite analizar la relación de dos variables. Puedes utilizar
+                        el siguiente algoritmo subiendo un archivo de Excel con dos columnas que contengan valores, 
+                        ya que serían las variables analizadas.
+                    </p>
+                </a>
+            </article>
+
+            <article class="section__article">
+                <a href="{{url_for('regresionLinealCuadrada')}}">
+                    <h2>Regresión<br> lineal cuadrática</h2>
+                    <p class="parrafo">
+                        Este modelo se utiliza cuando el modelo lineal no logra un coeficiente
+                        de determinación apropiado, o cuando las diferentes variables analizadas
+                        tiene un comportamiento considerado como parabólico. 
+                    </p>
+                </a>
+            </article>
+            <article class="section__article">
+                <a href="{{url_for('promedioMovil')}}">
+                    <h2>Promedio<br> móvil</h2>
+                    <p class="parrafo">
+                        El promedio móvil es un indicador de tendencias que se usa para realizar análisis
+                        de datos anteriores, con la finalidad de formar una serie de medidas que provengan de
+                        diversos subconjuntos de datos.
+                    </p>
+                </a>
+            </article>
+            <article class="section__article">
+                <a href="{{url_for('suavizacionExponencial')}}">
+                    <h2>Suavización<br> exponencial</h2>
+                    <p class="parrafo">
+                        La suavización exponencial es un método que utiliza un promedio ponderado de valores
+                        de series de tiempo pasadas como pronóstico, es un caso especial del
+                        método de promedios móviles ponderados.
+                    </p>
+                </a>
+            </article>
+            <article class="section__article">
+                <a href="{{url_for('sistemaMontecarlo')}}">
+                    <h2>Simulación de <br>Montecarlo</h2>
+                    <p class="parrafo">
+                        La simulación de Montecarlo es una técnica que combina conceptos estadísticos a partir de una
+                        distribución de probabilidad, mediante la cual permite realizar simulación matemática de los problemas.
+
+                    </p>
+                </a>
+            </article>
+            <article class="section__article">
+                <a href="{{url_for('sistemaInventario')}}">
+                    <h2>Sistema de<br>inventario</h2>
+                    <p class="parrafo">
+                        El sistema de inventario es un conjunto de políticas, modelos, componentes, que organizados y
+                        relacionados entre sí, nos permitan optimizar el costo de mantener el inventario.
+                    </p>
+                </a>
+            </article>
+
+
+            <article class="section__article">
+                <a href="{{url_for('sistemaLineaEspera')}}">
+                    <h2>Línea de<br>espera</h2>
+                    <p class="parrafo">
+                        El objetivo es encontrar el estado óptimo del sistema y determinar una capacidad de servicio apropiada,
+                        minimizar el tiempo de atención y servicio a los clientes o usuarios que llegan en un determinado tiempo.
+
+                    </p>
+                </a>
+            </article>
+
+
+    </main>
+    <br><br><br>
+{% endblock %}
+<br><br><br><br>
